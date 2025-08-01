@@ -1,32 +1,14 @@
-﻿namespace PNZ
+﻿namespace OddEven
 {
-    public class PNZ
-
+    public class Program
     {
-        int num;
-        public PNZ()
+        public static void Main(string[] args)
         {
-            num = 2;
-        }
-        public PNZ(int num)
-        {
-            this.num = num;
-        }
-        public void check()
-        {
-            if (num == 0)
-            {
-                Console.WriteLine("the number is zero.");
-            }
-            else if (num > 0)
-            {
-                Console.WriteLine("the number is positive.");
-            }
-            else
-            {
-                Console.WriteLine("the number is negative.");
-            }
+            int number = 10;
+            OddEven OddEven = new OddEven();
+            OddEven.ReadNumber(number);
+
         }
     }
 }
-                
+
