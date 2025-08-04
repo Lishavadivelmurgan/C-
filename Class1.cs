@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PNZ
+namespace SquareofNumber
 {
-    public class program
+    public class Class1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("enter a number:");
-            int num = Convert.ToInt32(Console.ReadLine());
-            PNZ n = new PNZ(num);
-            n.check();
+            Square square = new Square()
+ ;
 
+                square.CalculateSquare();
+            square.display();
         }
     }
 }

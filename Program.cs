@@ -1,14 +1,27 @@
-﻿namespace OddEven
+﻿namespace SquareofNumber
 {
-    public class Program
+    public class Square
     {
-        public static void Main(string[] args)
+        int number;
+        int square;
+        public Square()
         {
-            int number = 10;
-            OddEven OddEven = new OddEven();
-            OddEven.ReadNumber(number);
+            number = 2;
+        }
+        public Square(int number)
+        {
+            this.number = number;
+        }
+        public void CalculateSquare()
+        {
+            square = number * number;
+        }
+        public void display()
+        {
+            Console.WriteLine(
+                "the square of {0} is {1}", number  ,
+                square);
 
         }
     }
 }
-
