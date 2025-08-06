@@ -1,27 +1,16 @@
-﻿namespace SquareofNumber
+﻿namespace Person
 {
-    public class Square
+    public class Program
     {
-        int number;
-        int square;
-        public Square()
+        public static void Person()
         {
-            number = 2;
+            Person p1 = new Person();
+            p1.ReadData();
+            p1.DisplayData();
         }
-        public Square(int number)
+        public static void Main(string[] args)
         {
-            this.number = number;
-        }
-        public void CalculateSquare()
-        {
-            square = number * number;
-        }
-        public void display()
-        {
-            Console.WriteLine(
-                "the square of {0} is {1}", number  ,
-                square);
-
+            Person();
         }
     }
 }
