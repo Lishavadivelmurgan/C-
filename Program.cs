@@ -1,16 +1,18 @@
-﻿namespace Person
+﻿namespace ReverseNum
 {
-    public class Program
+    internal class Program
     {
-        public static void Person()
+        static void ReversNum()
         {
-            Person p1 = new Person();
-            p1.ReadData();
-            p1.DisplayData();
+            ReverseNum obj = new ReverseNum();
+            obj.ReadData();
+            obj.Reverse();
+            obj.Display();
         }
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Person();
+            
         }
     }
 }
+   

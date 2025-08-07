@@ -1,20 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SquareofNumber
+namespace ReverseNum
 {
-    public class Class1
+    internal class ReverseNum
     {
-        static void Main(string[] args)
+        public int Number;
+        public int Reversed;
+        public void ReadData()
         {
-            Square square = new Square()
- ;
-
-                square.CalculateSquare();
-            square.display();
+            Console.Write("enter a number to reverse:");
+            Number =Convert.ToInt32(Console.ReadLine());
         }
-    }
-}
+        public void Reverse()
+        {
+            int temp = Number;
+            Reversed = 0;
+            while (temp != 0)
+            {
+                int digit = temp % 10;
+                Reversed = Reversed * 10 + digit;
+                temp /= 10;
+            }
+        }
+        public void Display()
+        {
+            Console.WriteLine("Reversed Number: " + Reversed);
+        }
+            }
+        }
+  
